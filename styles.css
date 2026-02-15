@@ -284,11 +284,13 @@ nav {
     background: rgba(15, 25, 35, 0.5);
     z-index: 999;
     opacity: 0;
+    pointer-events: none;
     transition: opacity var(--transition);
 }
 
 .nav-overlay.active {
     opacity: 1;
+    pointer-events: auto;
 }
 
 /* Mobile Drawer */
@@ -436,17 +438,20 @@ nav {
     line-height: 1.1;
     margin-bottom: 1.25rem;
     letter-spacing: -1px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
 .hero-subtitle {
     font-size: clamp(1rem, 2vw, 1.25rem);
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: rgba(255,255,255,0.95);
     line-height: 1.7;
     font-weight: 400;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 .hero-buttons {
@@ -499,7 +504,8 @@ nav {
     gap: 2rem;
     flex-wrap: wrap;
     font-size: 0.9rem;
-    opacity: 0.85;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 .hero-trust-item {
@@ -553,19 +559,23 @@ nav {
     line-height: 1.15;
     margin-bottom: 0.75rem;
     letter-spacing: -0.5px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
 .page-hero p {
     font-size: 1.15rem;
-    opacity: 0.9;
+    color: rgba(255,255,255,0.95);
     max-width: 600px;
     margin: 0 auto;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 .page-hero .breadcrumb {
     margin-top: 1rem;
     font-size: 0.85rem;
-    opacity: 0.7;
+    color: rgba(255,255,255,0.8);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 .page-hero .breadcrumb a {
@@ -1080,10 +1090,11 @@ section {
 .cta-banner p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: rgba(255,255,255,0.95);
     max-width: 550px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .cta-button-large {
@@ -1666,6 +1677,13 @@ footer {
     font-size: clamp(1.75rem, 3.5vw, 2.5rem);
     font-weight: 800;
     margin-bottom: 3rem;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.testimonials p,
+.testimonials .section-intro {
+    color: rgba(255,255,255,0.9);
 }
 
 /* Service icon (legacy, hidden) */

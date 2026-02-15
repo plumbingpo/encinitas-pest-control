@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pest Control in Encinitas, California | Encinitas Pest Control</title>
-    <meta name="description" content="Professional pest control services in Encinitas, California. Call 555-123-4567 for reliable pest control solutions for your home or business.">
+    <meta name="description" content="Professional pest control services in Encinitas, California. Call 555-123-4567 for reliable pest control solutions for your home or business. Same-day service available.">
+    <meta property="og:title" content="Pest Control in Encinitas, California | Encinitas Pest Control">
+    <meta property="og:description" content="Professional pest control services in Encinitas, California. Call 555-123-4567 for reliable pest control solutions.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Encinitas Pest Control",
+        "telephone": "555-123-4567",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Encinitas",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+        },
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 33.0367,
+                "longitude": -117.2917
+            },
+            "geoRadius": "50000"
+        },
+        "priceRange": "$$"
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -38,7 +65,7 @@
                         <li><a href="vista.html">Vista</a></li>
                         <li><a href="san-marcos.html">San Marcos</a></li>
                         <li><a href="escondido.html">Escondido</a></li>
-                        <li><a href=" Solana-Beach.html">Solana Beach</a></li>
+                        <li><a href="solana-beach.html">Solana Beach</a></li>
                     </ul>
                 </li>
                 <li><a href="about.html">About Us</a></li>
@@ -48,61 +75,180 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
+    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80');">
+        <div class="hero-content">
             <h1>Pest Control in Encinitas, California</h1>
-            <p>Professional, reliable pest control services for homes and businesses in Encinitas. Protect your property from pests with our expert solutions.</p>
-            <a href="tel:5551234567" class="hero-cta">Call Now</a>
-        </section>
+            <p class="hero-subtitle">Professional, reliable pest control services for homes and businesses in Encinitas. Protect your property from pests with our expert solutions.</p>
+            <div class="hero-buttons">
+                <a href="tel:5551234567" class="hero-cta primary">Call Now</a>
+                <a href="#services" class="hero-cta secondary">Our Services</a>
+            </div>
+            <p class="hero-trust"><span>✓</span> Same-Day Service Available</p>
+        </div>
+    </section>
 
-        <section class="services-overview">
-            <h2>Our Pest Control Services</h2>
+    <section id="services" class="services-overview">
+        <div class="container">
+            <h2>Our Pest Control Services in Encinitas</h2>
+            <p class="section-intro">We provide comprehensive pest management solutions for residential and commercial properties throughout Encinitas and the surrounding North County San Diego areas.</p>
+            
             <div class="services-grid">
                 <div class="service-card">
+                    <div class="service-icon">🐜</div>
                     <h3>Ant Control</h3>
-                    <p>Effective ant removal for all species including Argentine, odorous house, and carpenter ants.</p>
-                    <a href="ant-control.html">Learn More</a>
+                    <p>Effective ant removal for all species including Argentine, odorous house, and carpenter ants. We identify the source and eliminate colonies.</p>
+                    <a href="ant-control.html" class="learn-more">Learn More →</a>
                 </div>
                 <div class="service-card">
+                    <div class="service-icon">🐛</div>
                     <h3>Termite Control</h3>
-                    <p>Comprehensive termite treatment and prevention to protect your home's structure.</p>
-                    <a href="termite-control.html">Learn More</a>
+                    <p>Comprehensive termite treatment and prevention to protect your home's structural integrity. Free inspections available.</p>
+                    <a href="termite-control.html" class="learn-more">Learn More →</a>
                 </div>
                 <div class="service-card">
+                    <div class="service-icon">🐀</div>
                     <h3>Rodent Control</h3>
-                    <p>Humane mouse and rat removal with exclusion services to prevent return.</p>
-                    <a href="rodent-control.html">Learn More</a>
+                    <p>Humane mouse and rat removal with exclusion services to prevent future infestations. Full property sealing included.</p>
+                    <a href="rodent-control.html" class="learn-more">Learn More →</a>
                 </div>
                 <div class="service-card">
+                    <div class="service-icon">🛏️</div>
                     <h3>Bed Bug Treatment</h3>
-                    <p>Thorough bed bug elimination using proven heat and chemical treatments.</p>
-                    <a href="bed-bug-treatment.html">Learn More</a>
+                    <p>Thorough bed bug elimination using proven heat and chemical treatments. We guarantee complete eradication.</p>
+                    <a href="bed-bug-treatment.html" class="learn-more">Learn More →</a>
                 </div>
             </div>
-        </section>
+            
+            <div class="services-cta">
+                <a href="tel:5551234567" class="cta-large">Call 555-123-4567 for All Services</a>
+            </div>
+        </div>
+    </section>
 
-        <section class="why-choose-us">
-            <h2>Why Choose Encinitas Pest Control?</h2>
-            <ul>
-                <li><strong>Local Experts:</strong> Serving Encinitas and surrounding areas for over 10 years</li>
-                <li><strong>Eco-Friendly Options:</strong> Safe treatments for families and pets</li>
-                <li><strong>Fast Response:</strong> Same-day service available</li>
-                <li><strong>Free Estimates:</strong> Transparent pricing with no hidden fees</li>
-                <li><strong>Guaranteed Results:</strong> We stand behind our work</li>
-            </ul>
-        </section>
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Encinitas Residents Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Local Experts</h3>
+                    <p>Serving Encinitas and surrounding areas for over 10 years. We know the local pest challenges unique to our coastal climate.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Eco-Friendly Options</h3>
+                    <p>Safe treatments for families and pets. We offer green pest control solutions when needed without compromising effectiveness.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Response</h3>
+                    <p>Same-day service available for urgent pest problems. We answer our phones 24/7 for emergencies.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>Free Estimates</h3>
+                    <p>Transparent pricing with no hidden fees. We provide detailed quotes before starting any work.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✅</div>
+                    <h3>Guaranteed Results</h3>
+                    <p>We stand behind our work. If pests return between scheduled visits, we'll re-treat at no extra cost.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family Owned</h3>
+                    <p>We're proud to be a local, family-owned business. We treat every customer like family—with respect and honest service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="contact-section">
-            <h2>Contact Us Today</h2>
-            <p>Ready to get rid of pests? Call us now for a free consultation.</p>
-            <a href="tel:5551234567" class="contact-phone">555-123-4567</a>
-            <p>Serving Encinitas, California and surrounding areas</p>
-        </section>
-    </main>
+    <section class="service-areas">
+        <div class="container">
+            <h2>Proudly Serving Encinitas & Surrounding Areas</h2>
+            <p class="section-intro">As a local Encinitas business, we're proud to serve our community and neighboring cities with professional pest control.</p>
+            <div class="areas-grid">
+                <a href="carlsbad.html" class="area-card">Carlsbad</a>
+                <a href="oceanside.html" class="area-card">Oceanside</a>
+                <a href="vista.html" class="area-card">Vista</a>
+                <a href="san-marcos.html" class="area-card">San Marcos</a>
+                <a href="escondido.html" class="area-card">Escondido</a>
+                <a href="solana-beach.html" class="area-card">Solana Beach</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Encinitas Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"We had a termite issue and called Encinitas Pest Control. They came same-day, gave us a fair estimate, and the work was done professionally. Highly recommend!"</p>
+                    <p class="testimonial-author">— Sarah M., Encinitas</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Best pest control company in the area! They've been treating our home for years and we never have bugs. The technicians are always friendly and knowledgeable."</p>
+                    <p class="testimonial-author">— James R., Cardiff-by-the-Sea</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Called for ant control and they were out the same day. Found the colony and eliminated it. No more ants! Great service."</p>
+                    <p class="testimonial-author">— Linda K., Leucadia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Ready to Get Rid of Pests?</h2>
+            <p>Don't let pests take over your home or business. Contact us today for a free consultation.</p>
+            <a href="tel:5551234567" class="cta-button-large">Call 555-123-4567</a>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Encinitas Pest Control. All rights reserved.</p>
-        <p>Locally owned and operated in Encinitas, California</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Encinitas Pest Control</h3>
+                    <p>Local, family-owned pest control serving Encinitas and surrounding areas since 2014.</p>
+                    <p class="footer-phone">📞 <a href="tel:5551234567">555-123-4567</a></p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="residential.html">Residential</a></li>
+                        <li><a href="commercial.html">Commercial</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="ant-control.html">Ant Control</a></li>
+                        <li><a href="termite-control.html">Termite Control</a></li>
+                        <li><a href="rodent-control.html">Rodent Control</a></li>
+                        <li><a href="bed-bug-treatment.html">Bed Bug Treatment</a></li>
+                        <li><a href="cockroach-control.html">Cockroach Control</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Encinitas, California</p>
+                    <p>Phone: <a href="tel:5551234567">555-123-4567</a></p>
+                    <p>Email: info@encinitaspestcontrol.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Encinitas Pest Control. All rights reserved.</p>
+                <p>Locally owned and operated in Encinitas, California</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

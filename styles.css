@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+    background: #1a5f2a;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #1a5f2a;
+    list-style: none;
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+    padding: 0.5rem 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu a {
+    white-space: nowrap;
+}
+
+.cta-button {
+    background: #f4a024;
+    color: #1a1a1a;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 8rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.hero-cta {
+    display: inline-block;
+    background: #f4a024;
+    color: #1a1a1a;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Services Grid */
+.services-overview {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-overview h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    color: #1a5f2a;
+    margin-bottom: 1rem;
+}
+
+.service-card a {
+    color: #1a5f2a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+    background: #f4f4f4;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-choose-us h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.why-choose-us li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #1a5f2a;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.contact-section h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-phone {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f4a024;
+    text-decoration: none;
+    margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Page Content */
+.page-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.page-content h1 {
+    color: #1a5f2a;
+    margin-bottom: 1rem;
+}
+
+.page-content h2 {
+    color: #1a5f2a;
+    margin: 2rem 0 1rem;
+}
+
+.page-content p {
+    margin-bottom: 1rem;
+}
+
+.page-content ul {
+    margin: 1rem 0 1rem 2rem;
+}
+
+.page-content li {
+    margin-bottom: 0.5rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: #1a5f2a;
+    text-decoration: none;
+}
+
+/* Contact Box */
+.contact-box {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contact-box a {
+    font-size: 1.5rem;
+    color: #1a5f2a;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
